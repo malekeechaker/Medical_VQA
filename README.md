@@ -6,7 +6,7 @@ Ce projet implémente un système de VQA (Visual Question Answering) spécialis�
 ## Installation
 1. Clonez le dépôt :
    ```bash
-   git clone https://github.com/votre-repo/medical-vqa.git
+   git clone https://github.com/malekeechaker/Medical-VQA.git
    cd medical-vqa
    ```
 2. Créez un environnement virtuel et installez les dépendances :
@@ -30,17 +30,13 @@ Ce projet implémente un système de VQA (Visual Question Answering) spécialis�
 Le modèle a été entraîné sur des bases de données d'images médicales contenant des annotations validées par des experts.
 
 ## Modèle d'IA
-- Utilisation d'un modèle basé sur **Vision Transformer (ViT)** pour l'analyse d'images.
-- **BERT** pour le traitement du langage naturel et la compréhension des questions.
-- Entraînement réalisé avec **PyTorch** et **Hugging Face Transformers**.
+The BLIP model was proposed in BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation by Junnan Li, Dongxu Li, Caiming Xiong, Steven Hoi.
 
-## Résultats
-Le modèle atteint une précision de **85%** sur un ensemble de tests médicaux.
+BLIP is a model that is able to perform various multi-modal tasks including: 
 
-## Contributeurs
-- **Votre Nom** - Développement et entraînement du modèle
-- **Autres contributeurs** (si applicable)
+- Visual Question Answering
+- Image-Text retrieval (Image-text matching)
+- Image Captioning
+- The abstract from the paper is the following:
 
-## Licence
-Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
-
+Vision-Language Pre-training (VLP) has advanced the performance for many vision-language tasks. However, most existing pre-trained models only excel in either understanding-based tasks or generation-based tasks. Furthermore, performance improvement has been largely achieved by scaling up the dataset with noisy image-text pairs collected from the web, which is a suboptimal source of supervision. In this paper, we propose BLIP, a new VLP framework which transfers flexibly to both vision-language understanding and generation tasks. BLIP effectively utilizes the noisy web data by bootstrapping the captions, where a captioner generates synthetic captions and a filter removes the noisy ones. We achieve state-of-the-art results on a wide range of vision-language tasks, such as image-text retrieval (+2.7% in average recall@1), image captioning (+2.8% in CIDEr), and VQA (+1.6% in VQA score). BLIP also demonstrates strong generalization ability when directly transferred to videolanguage tasks in a zero-shot manner. Code, models, and datasets are released.
